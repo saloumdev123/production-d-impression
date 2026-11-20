@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: Gestion-de-production-d-impression
+
+  # ------------------------------------------------------------
+  # Base de données MongoDB
+  # ------------------------------------------------------------
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+      auto-index-creation: true
+
+  # ------------------------------------------------------------
+  # Upload de fichiers (motifs, previews)
+  # ------------------------------------------------------------
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 100MB
+
+
+
+management:
+  health:
+    mail:
+      enabled: false
